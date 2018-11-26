@@ -1,0 +1,52 @@
+{
+    "types": [
+        {
+            "item": "アイロン",
+            "types": [
+                {
+                    "material": "default",
+                    "type": "粗大ゴミ"
+                }
+            ],
+            "isSodaigomiOver40cm": false,
+            "isCannotTakeOut": false,
+            "additionalText": ""
+        },
+        {
+            "item": "アイロン台",
+            "types": [
+                {
+                    "material": "金属製の",
+                    "type": "金属ゴミ"
+                },
+                {
+                    "material": "金属製以外の",
+                    "type": "一般ゴミ"
+                }
+            ],
+            "isSodaigomiOver40cm": false,
+            "isCannotTakeOut": false,
+            "additionalText": ""
+        },
+        {
+            "item": "石",
+            "types": [
+            ],
+            "isSodaigomiOver40cm": false,
+            "isCannotTakeOut": true,
+            "additionalText": ""
+        },
+        {
+            "item": "油",
+            "types": [
+                {
+                    "material": "default",
+                    "type": "一般ゴミ"
+                }
+            ],
+            "isSodaigomiOver40cm": false,
+            "isCannotTakeOut": false,
+            "additionalText": "布等に染み込ませて漏れないようにしてから出してください。"
+        }
+    ]
+}

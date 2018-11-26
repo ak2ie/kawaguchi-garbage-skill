@@ -1,0 +1,39 @@
+{
+  "name": "hello-world",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "build": ".\\node_modules\\.bin\\webpack --config webpack.config.ts",
+    "pjson": "ts-node ./tools/gen-package-json.ts > ./lambda/custom/package.json",
+    "test": ".\\node_modules\\.bin\\jest",
+    "clean": "rm -rf ./lambda/custom/*"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "ask-sdk-core": "^2.0.0",
+    "ask-sdk-model": "^1.0.0"
+  },
+  "devDependencies": {
+    "@types/axios": "^0.14.0",
+    "@types/cheerio": "^0.22.9",
+    "@types/jest": "^23.3.9",
+    "@types/node": "^10.12.9",
+    "@types/request": "^2.48.1",
+    "@types/webpack": "^4.4.19",
+    "@types/webpack-node-externals": "^1.6.3",
+    "axios": "^0.18.0",
+    "cheerio": "^1.0.0-rc.2",
+    "jest": "^23.6.0",
+    "pjson": "^1.0.9",
+    "request": "^2.88.0",
+    "ts-jest": "^23.10.4",
+    "ts-loader": "^5.3.0",
+    "ts-node": "^7.0.1",
+    "virtual-alexa": "^0.6.14",
+    "webpack": "^4.25.1",
+    "webpack-cli": "^3.1.2",
+    "webpack-node-externals": "^1.7.2"
+  }
+}

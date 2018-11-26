@@ -1,0 +1,1287 @@
+{
+	"types": [
+		{
+			"item": "",
+			"types": [],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "",
+			"types": [],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "",
+			"types": [],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "IHクッキングヒーター",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アイスピック",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アイスボックス",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アイロン",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アイロン台（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アイロン台 （金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アコーディオンカーテン（つい立）",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "処分手数料につきましては、「"
+		},
+		{
+			"item": "足拭きマット（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "足拭きマット （金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アタッシュケース （金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アタッシュケース （金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "油（機械・鉱油類）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "布等に染み込ませて漏れないようにしてから出してください。"
+		},
+		{
+			"item": "油（食用）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "布等に染み込ませて漏れないようにしてから出してください。"
+		},
+		{
+			"item": "油紙",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "油の容器（金属製）",
+			"types": [
+				{
+					"material": "",
+					"type": "一般ゴミ"
+				},
+				{
+					"material": "",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "汚れが落ちない場合は一般ごみです。"
+		},
+		{
+			"item": "油の容器 （プラスチック製）",
+			"types": [
+				{
+					"material": "",
+					"type": "一般ゴミ"
+				},
+				{
+					"material": "",
+					"type": "プラ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "汚れが落ちない場合は一般ごみです。"
+		},
+		{
+			"item": "編み機（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "編み機 （金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "網戸",
+			"types": [
+				{
+					"material": "",
+					"type": "金属"
+				},
+				{
+					"material": "",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "編み針（金属）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "編み針 （竹・プラスチック製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "あめの袋",
+			"types": [
+				{
+					"material": "default",
+					"type": "プラ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アルバム",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アルミサッシ",
+			"types": [
+				{
+					"material": "",
+					"type": "金属"
+				},
+				{
+					"material": "",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "ガラス等は取り外してください。"
+		},
+		{
+			"item": "アルミホイル（アルミ箔）",
+			"types": [
+				{
+					"material": "",
+					"type": "一般ゴミ"
+				},
+				{
+					"material": "",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "汚れが落ちない場合は一般ごみです。"
+		},
+		{
+			"item": "泡立て機",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "安全靴",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "安全ピン",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アンテナ（U型）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アンテナ（V型）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アンテナ（パラボラ型）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "アンプ",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "池（プラスチック製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "石",
+			"types": [],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": true,
+			"additionalText": "販売店又は取り扱い業者へご相談ください。"
+		},
+		{
+			"item": "衣装ケース",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "1ケース1個扱いです。複数個出す場合は、ひとつにまとめないでください。"
+		},
+		{
+			"item": "椅子",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "いちごのパック",
+			"types": [
+				{
+					"material": "default",
+					"type": "プラ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "一輪車（乗用）",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "一升瓶",
+			"types": [
+				{
+					"material": "default",
+					"type": "びん"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "なるべく販売店に返却してください。"
+		},
+		{
+			"item": "一斗缶",
+			"types": [
+				{
+					"material": "",
+					"type": "金属"
+				},
+				{
+					"material": "",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "必ず中身を取り除き、ふたを取ってから出してください。"
+		},
+		{
+			"item": "井戸用ポンプ",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "犬小屋",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "衣類",
+			"types": [
+				{
+					"material": "default",
+					"type": "繊維"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "衣類乾燥機",
+			"types": [],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": true,
+			"additionalText": "家電リサイクル法対象品目です。「"
+		},
+		{
+			"item": "入れ歯",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "印鑑",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "インクリボン",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "印刷用インク",
+			"types": [],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": true,
+			"additionalText": ""
+		},
+		{
+			"item": "印刷用インクカートリッジ",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "なるべく販売店に返却してください。"
+		},
+		{
+			"item": "インスタントめんの袋",
+			"types": [
+				{
+					"material": "default",
+					"type": "プラ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "インターホン",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "ウインドサーフィンボード",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "処分手数料につきましては、「"
+		},
+		{
+			"item": "植木支柱（園芸用）（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "植木支柱（園芸用）（金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "植木鉢（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "植木鉢（金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "ウエットスーツ",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "ウォシュレット",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "浮き輪",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "ウクレレ",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "臼（うす）",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "乳母車（ベビーカー）",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "羽毛布団",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "運動靴",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "エアコン",
+			"types": [],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": true,
+			"additionalText": "家電リサイクル法対象品目です。「"
+		},
+		{
+			"item": "エアゾール缶",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "必ず中を使い切ってから出してください。"
+		},
+		{
+			"item": "映写機",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "液晶テレビ",
+			"types": [],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": true,
+			"additionalText": ""
+		},
+		{
+			"item": "エキスパンダー",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "枝切バサミ",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "絵の具",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "絵本",
+			"types": [
+				{
+					"material": "default",
+					"type": "紙"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "エレキギター",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "エレクトーン",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "エンジンオイル",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "できるだけ販売店へ返却してください。"
+		},
+		{
+			"item": "鉛筆",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "鉛筆削り",
+			"types": [
+				{
+					"material": "",
+					"type": "一般ゴミ"
+				},
+				{
+					"material": "",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "小型のものは一般ごみです。"
+		},
+		{
+			"item": "オイルヒーター",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "オーディオラック",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "オートバイ（原付含む）",
+			"types": [],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": true,
+			"additionalText": "販売店に返却してください。「"
+		},
+		{
+			"item": "オーブントースター",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "オーブンレンジ",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "桶（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "桶（金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "押入れダンス",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "おしゃぶり",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "おたま（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "おたま（金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "落ち葉",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "お茶の袋・容器",
+			"types": [
+				{
+					"material": "default",
+					"type": "プラ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "帯",
+			"types": [
+				{
+					"material": "default",
+					"type": "繊維"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "お盆（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "お盆（金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "おまる",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "オムツカバー",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "おもちゃ（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "おもちゃ （金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "折りたたみ式ベッド",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "処分手数料につきましては、「"
+		},
+		{
+			"item": "オルガン",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "オルゴール",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "下ろし金（金属製）",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "下ろし金 （金属製を除く）",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "温室（家庭用）",
+			"types": [
+				{
+					"material": "default",
+					"type": "粗大ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		},
+		{
+			"item": "温度計",
+			"types": [
+				{
+					"material": "",
+					"type": "一般ゴミ"
+				},
+				{
+					"material": "",
+					"type": "有害ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": "水銀式は有害ごみです。"
+		},
+		{
+			"item": "温風ヒーター",
+			"types": [
+				{
+					"material": "default",
+					"type": "金属"
+				}
+			],
+			"isSodaigomiOver40cm": true,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		}
+	]
+}

@@ -1,0 +1,37 @@
+{
+  "manifest": {
+    "publishingInformation": {
+      "locales": {
+        "ja-JP": {
+          "summary": "川口市のゴミ分別方法を調べることができます。",
+          "examplePhrases": [
+            "アレクサ、川口のゴミ分別を開いて",
+            "アレクサ、川口のゴミ分別で食器を調べて"
+          ],
+          "name": "川口のゴミ分別",
+          "description": "ゴミの名前を話しかけると、何のゴミで出せばよいか教えてくれます",
+          "keywords": [
+            "川口",
+            "川口市",
+            "ゴミ",
+            "分別"
+          ],
+          "smallIconUri": "./icons/icon_108_A2Z.png",
+          "largeIconUri": "./icons/icon_512_A2Z.png"
+        }
+      },
+      "isAvailableWorldwide": true,
+      "testingInstructions": "特別な要件はありません。テスト手順は、1．「アレクサ、川口のゴミ分別を開いて」、2.「アイロンを調べて」でOKです。",
+      "category": "HOME_SERVICES",
+      "distributionCountries": []
+    },
+    "apis": {
+      "custom": {
+        "endpoint": {
+          "sourceDir": "lambda/custom"
+        }
+      }
+    },
+    "manifestVersion": "1.0"
+  }
+}

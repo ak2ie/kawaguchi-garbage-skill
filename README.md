@@ -8,5 +8,5 @@
 # デプロイ方法
 ```
 npm run build
-alexa deploy
+ask deploy
 ```

@@ -4107,14 +4107,7 @@
       "intents": [
         {
           "name": "AMAZON.CancelIntent",
-          "samples": [
-            "終了",
-            "やめた",
-            "もういいよ",
-            "大丈夫",
-            "ストップ",
-            "終わり"
-          ]
+          "samples": []
         },
         {
           "name": "AMAZON.HelpIntent",
@@ -4122,14 +4115,7 @@
         },
         {
           "name": "AMAZON.StopIntent",
-          "samples": [
-            "終了",
-            "やめた",
-            "もういいよ",
-            "大丈夫",
-            "ストップ",
-            "終わり"
-          ]
+          "samples": []
         },
         {
           "name": "GarbageTypeIntent",

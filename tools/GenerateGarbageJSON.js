@@ -38,181 +38,366 @@ exports.__esModule = true;
 var cheerio = require("cheerio");
 var axios = require("axios");
 var fs = require("fs");
-function getHTML(url) {
-    return __awaiter(this, void 0, void 0, function () {
-        var html;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, axios["default"].get(url)];
-                case 1:
-                    html = _a.sent();
-                    return [2 /*return*/, html];
-            }
+var GarbageData = /** @class */ (function () {
+    function GarbageData() {
+        this.bunbetsuGuideUrls = [
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3469.html",
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3470.html",
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3471.html",
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3472.html",
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3473.html",
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3474.html",
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3475.html",
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3476.html",
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3477.html",
+            "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3478.html"
+        ];
+        /**
+         * ゴミ分別データJSONファイル名
+         */
+        this.GARBAGE_DATA_JSON_FILENAME = 'GarbageTypes.json';
+        /**
+         * Alexa Skill model用ファイル名
+         */
+        this.ALEXA_SKILL_MODEL_JSON_FILENAME = 'ja-JP_GARBAGE_TYPE.json';
+    }
+    GarbageData.prototype.getGarbageData = function () {
+        return __awaiter(this, void 0, void 0, function () {
+            var garbageData, _i, _a, url, html, tempGarbageData, duplicateRemovedData;
+            return __generator(this, function (_b) {
+                switch (_b.label) {
+                    case 0:
+                        garbageData = new BunbetsuData([], []);
+                        _i = 0, _a = this.bunbetsuGuideUrls;
+                        _b.label = 1;
+                    case 1:
+                        if (!(_i < _a.length)) return [3 /*break*/, 5];
+                        url = _a[_i];
+                        return [4 /*yield*/, this.getHTML(url)];
+                    case 2:
+                        html = _b.sent();
+                        return [4 /*yield*/, this.getGarbageDataFromHTML(html.data)];
+                    case 3:
+                        tempGarbageData = _b.sent();
+                        garbageData.addBunbetsu(tempGarbageData.Bunbetsu);
+                        garbageData.addItems(tempGarbageData.Items);
+                        _b.label = 4;
+                    case 4:
+                        _i++;
+                        return [3 /*break*/, 1];
+                    case 5:
+                        console.log(garbageData.Bunbetsu.length);
+                        console.log(garbageData.Items.length);
+                        duplicateRemovedData = this.removeDulplicate(garbageData);
+                        // 記号チェック
+                        this.isContainsOnlyCanSpeakWord(duplicateRemovedData.Items);
+                        // JSON出力
+                        this.outputJson(duplicateRemovedData);
+                        return [2 /*return*/];
+                }
+            });
         });
-    });
-}
-exports.getHTML = getHTML;
-function getGarbageDataFromHTML(url) {
-    return __awaiter(this, void 0, void 0, function () {
-        var body, HINMOKU_TABLE_HEADER, $_1, result, items;
-        return __generator(this, function (_a) {
-            switch (_a.label) {
-                case 0: return [4 /*yield*/, getHTML(url)];
-                case 1:
-                    body = _a.sent();
-                    (function (HINMOKU_TABLE_HEADER) {
-                        HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["HINMOKU"] = 0] = "HINMOKU";
-                        HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["IPPANNGOMI"] = 1] = "IPPANNGOMI";
-                        HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["YUUGAIGOMI"] = 2] = "YUUGAIGOMI";
-                        HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["SIGENBUTSU"] = 3] = "SIGENBUTSU";
-                        HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["KANDENCHI"] = 4] = "KANDENCHI";
-                        HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["SODAIGOMI"] = 5] = "SODAIGOMI";
-                        HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["HANNYUUKINSHI"] = 6] = "HANNYUUKINSHI";
-                        HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["BIKO"] = 7] = "BIKO";
-                    })(HINMOKU_TABLE_HEADER || (HINMOKU_TABLE_HEADER = {}));
-                    ;
-                    try {
-                        $_1 = cheerio.load(body.data);
-                        result = [];
-                        items = [];
-                        $_1('#contents-in table tr').each(function (index, elemet) {
-                            var item = "";
-                            var types = [];
-                            var isSodaigomiOver40cm = false;
-                            var isCannotTakeOut = false;
-                            var additionalText = "";
-                            $_1(elemet).children('td').each(function (i, tdElement) {
-                                var elementText = "";
-                                var elementData = tdElement.children[0].data;
-                                if (typeof elementData === "string") {
-                                    elementText = elementData.trim();
-                                }
-                                switch (i) {
-                                    case HINMOKU_TABLE_HEADER.HINMOKU:
+    };
+    GarbageData.prototype.getGarbageDataFromHTML = function (body) {
+        return __awaiter(this, void 0, void 0, function () {
+            var HINMOKU_TABLE_HEADER, $_1, result, items, res;
+            return __generator(this, function (_a) {
+                (function (HINMOKU_TABLE_HEADER) {
+                    HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["HINMOKU"] = 0] = "HINMOKU";
+                    HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["IPPANNGOMI"] = 1] = "IPPANNGOMI";
+                    HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["YUUGAIGOMI"] = 2] = "YUUGAIGOMI";
+                    HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["SIGENBUTSU"] = 3] = "SIGENBUTSU";
+                    HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["KANDENCHI"] = 4] = "KANDENCHI";
+                    HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["SODAIGOMI"] = 5] = "SODAIGOMI";
+                    HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["HANNYUUKINSHI"] = 6] = "HANNYUUKINSHI";
+                    HINMOKU_TABLE_HEADER[HINMOKU_TABLE_HEADER["BIKO"] = 7] = "BIKO";
+                })(HINMOKU_TABLE_HEADER || (HINMOKU_TABLE_HEADER = {}));
+                ;
+                try {
+                    $_1 = cheerio.load(body);
+                    result = [];
+                    items = [];
+                    $_1('#contents-in table tr').each(function (index, elemet) {
+                        var item = "";
+                        var types = [];
+                        var isSodaigomiOver40cm = false;
+                        var isCannotTakeOut = false;
+                        var additionalText = "";
+                        $_1(elemet).children('td').each(function (i, tdElement) {
+                            var elementText = "";
+                            var elementData = tdElement.children[0].data;
+                            if (typeof elementData === "string") {
+                                elementText = elementData.trim();
+                            }
+                            switch (i) {
+                                case HINMOKU_TABLE_HEADER.HINMOKU:
+                                    // 「（）」など、言葉に発しない文字を除く
+                                    var removeWord = /.*[（\(・].*/g;
+                                    elementText = elementText.trim();
+                                    if (!removeWord.test(elementText)) {
                                         item = elementText;
-                                        break;
-                                    case HINMOKU_TABLE_HEADER.IPPANNGOMI:
-                                        if (elementText === '該当する') {
-                                            types.push("一般ゴミ");
+                                    }
+                                    else {
+                                        // 「（）」が2つ存在する場合があるので、最短マッチ
+                                        var regexpNonVerbalWord = /^(.*?)[（\(].*/;
+                                        var regexpResultArray = regexpNonVerbalWord.exec(elementText);
+                                        if (regexpResultArray !== null) {
+                                            item = regexpResultArray[1].replace('・', '').trim();
                                         }
-                                        break;
-                                    case HINMOKU_TABLE_HEADER.YUUGAIGOMI:
-                                        if (elementText === '該当する') {
-                                            types.push("有害ゴミ");
+                                        else {
+                                            new Error("品目の取得に失敗:" + elementText);
                                         }
-                                        break;
-                                    case HINMOKU_TABLE_HEADER.SIGENBUTSU:
-                                        if (elementText !== "") {
-                                            types.push(elementText + "ゴミ");
-                                        }
-                                        break;
-                                    case HINMOKU_TABLE_HEADER.KANDENCHI:
-                                        if (elementText === '該当する') {
-                                            types.push("乾電池");
-                                        }
-                                        break;
-                                    case HINMOKU_TABLE_HEADER.SODAIGOMI:
-                                        if (elementText === '該当する') {
-                                            types.push("粗大ゴミ");
-                                        }
-                                        break;
-                                    case HINMOKU_TABLE_HEADER.HANNYUUKINSHI:
-                                        if (elementText === '該当する') {
-                                            isCannotTakeOut = true;
-                                        }
-                                        break;
-                                    case HINMOKU_TABLE_HEADER.BIKO:
-                                        if (elementText !== "" && elementText !== "40センチメートルを超えるものは粗大ごみです。") {
-                                            additionalText = elementText.replace("40センチメートルを超えるものは粗大ごみです。", "");
-                                        }
-                                        else if (elementText !== "" && elementText.indexOf("40センチメートルを超えるものは粗大ごみです。") !== -1) {
-                                            isSodaigomiOver40cm = true;
-                                        }
-                                        break;
-                                }
-                            });
-                            if (item.length === 0) {
-                                return;
+                                    }
+                                    break;
+                                case HINMOKU_TABLE_HEADER.IPPANNGOMI:
+                                    if (elementText === '該当する') {
+                                        types.push("一般ゴミ");
+                                    }
+                                    break;
+                                case HINMOKU_TABLE_HEADER.YUUGAIGOMI:
+                                    if (elementText === '該当する') {
+                                        types.push("有害ゴミ");
+                                    }
+                                    break;
+                                case HINMOKU_TABLE_HEADER.SIGENBUTSU:
+                                    if (elementText !== "") {
+                                        types.push(elementText + "ゴミ");
+                                    }
+                                    break;
+                                case HINMOKU_TABLE_HEADER.KANDENCHI:
+                                    if (elementText === '該当する') {
+                                        types.push("乾電池");
+                                    }
+                                    break;
+                                case HINMOKU_TABLE_HEADER.SODAIGOMI:
+                                    if (elementText === '該当する') {
+                                        types.push("粗大ゴミ");
+                                    }
+                                    break;
+                                case HINMOKU_TABLE_HEADER.HANNYUUKINSHI:
+                                    if (elementText === '該当する') {
+                                        isCannotTakeOut = true;
+                                    }
+                                    break;
+                                case HINMOKU_TABLE_HEADER.BIKO:
+                                    if (elementText !== "" && elementText !== "40センチメートルを超えるものは粗大ごみです。") {
+                                        additionalText = elementText.replace("40センチメートルを超えるものは粗大ごみです。", "");
+                                    }
+                                    else if (elementText !== "" && elementText.indexOf("40センチメートルを超えるものは粗大ごみです。") !== -1) {
+                                        isSodaigomiOver40cm = true;
+                                    }
+                                    break;
                             }
-                            /**
-                             * 40cmを超える場合粗大ゴミとしてだすときは、
-                             * isSodaigomiOver40cmで設定し、types（ゴミ種別）には粗大ゴミを設定しない
-                             */
-                            if (types.indexOf("粗大ゴミ") !== -1 && isSodaigomiOver40cm) {
-                                var removeIndex = types.indexOf("粗大ゴミ");
-                                types.splice(removeIndex, 1);
-                            }
-                            var typesJSON = [];
-                            if (types.length === 1) {
-                                typesJSON = [{
-                                        "material": "default",
-                                        "type": types[0]
-                                    }];
-                            }
-                            else {
-                                for (var _i = 0, types_1 = types; _i < types_1.length; _i++) {
-                                    var type = types_1[_i];
-                                    typesJSON.push({
-                                        "material": "",
-                                        "type": type
-                                    });
-                                }
-                            }
-                            var garbageData = {
-                                item: item,
-                                types: typesJSON,
-                                isSodaigomiOver40cm: isSodaigomiOver40cm,
-                                isCannotTakeOut: isCannotTakeOut,
-                                additionalText: additionalText
-                            };
-                            result.push(garbageData);
-                            items.push({ name: { value: item } });
                         });
-                        return [2 /*return*/, {
-                                "Bunbetsu": result,
-                                "Items": items
-                            }];
-                    }
-                    catch (e) {
-                        console.error(e);
-                    }
-                    return [2 /*return*/];
-            }
+                        if (item.length === 0) {
+                            return;
+                        }
+                        /**
+                         * 40cmを超える場合粗大ゴミとしてだすときは、
+                         * isSodaigomiOver40cmで設定し、types（ゴミ種別）には粗大ゴミを設定しない
+                         */
+                        if (types.indexOf("粗大ゴミ") !== -1 && isSodaigomiOver40cm) {
+                            var removeIndex = types.indexOf("粗大ゴミ");
+                            types.splice(removeIndex, 1);
+                        }
+                        var typesJSON = [];
+                        if (types.length === 1) {
+                            typesJSON = [{
+                                    "material": "default",
+                                    "type": types[0]
+                                }];
+                        }
+                        else {
+                            for (var _i = 0, types_1 = types; _i < types_1.length; _i++) {
+                                var type = types_1[_i];
+                                typesJSON.push({
+                                    "material": "",
+                                    "type": type
+                                });
+                            }
+                        }
+                        var garbageData = {
+                            item: item,
+                            types: typesJSON,
+                            isSodaigomiOver40cm: isSodaigomiOver40cm,
+                            isCannotTakeOut: isCannotTakeOut,
+                            additionalText: additionalText
+                        };
+                        result.push(garbageData);
+                        items.push({ name: { value: item } });
+                    });
+                    res = new BunbetsuData(result, items);
+                }
+                catch (e) {
+                    console.error(e);
+                }
+                return [2 /*return*/, res];
+            });
         });
-    });
-}
-var bunbetsuGuideUrls = [
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3469.html",
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3470.html",
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3471.html",
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3472.html",
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3473.html",
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3474.html",
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3475.html",
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3476.html",
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3477.html",
-    "https://www.city.kawaguchi.lg.jp/soshiki/01100/040/4/3/3478.html"
-];
-var BunbetsuData = {
-    Bunbetsu: [],
-    Items: []
-};
-for (var _i = 0, bunbetsuGuideUrls_1 = bunbetsuGuideUrls; _i < bunbetsuGuideUrls_1.length; _i++) {
-    var url = bunbetsuGuideUrls_1[_i];
-    getGarbageDataFromHTML(url).then(function (response) {
-        if (response !== undefined) {
-            for (var _i = 0, _a = response.Bunbetsu; _i < _a.length; _i++) {
-                var item = _a[_i];
-                BunbetsuData.Bunbetsu.push(item);
+    };
+    /**
+     * HTMLを取得する
+     * @param url URL
+     */
+    GarbageData.prototype.getHTML = function (url) {
+        return __awaiter(this, void 0, void 0, function () {
+            var html;
+            return __generator(this, function (_a) {
+                switch (_a.label) {
+                    case 0: return [4 /*yield*/, axios["default"].get(url)];
+                    case 1:
+                        html = _a.sent();
+                        return [2 /*return*/, html];
+                }
+            });
+        });
+    };
+    /**
+     * ゴミ分別データとAlexa Skillのモデル用カスタムスロットデータをJSONファイルに出力する
+     * @param bunbetsuData 出力するデータ
+     */
+    GarbageData.prototype.outputJson = function (bunbetsuData) {
+        fs.writeFileSync(this.GARBAGE_DATA_JSON_FILENAME, JSON.stringify({ "types": bunbetsuData.Bunbetsu }, undefined, '\t'));
+        fs.writeFileSync(this.ALEXA_SKILL_MODEL_JSON_FILENAME, JSON.stringify(bunbetsuData.Items, undefined, '\t'));
+    };
+    GarbageData.prototype.removeDulplicate = function (originalBunbetsuData) {
+        // 品目名別の要素数
+        var itemCount = {
+            Bunbetsu: [],
+            Items: []
+        };
+        // 分別情報について、ゴミの名前の種類を数える
+        for (var _i = 0, _a = originalBunbetsuData.Bunbetsu; _i < _a.length; _i++) {
+            var bunbetsuData = _a[_i];
+            if (itemCount.Bunbetsu.length > 0) {
+                // カウント情報1件以上が存在する場合
+                var lastIndex = itemCount.Bunbetsu.length - 1;
+                for (var index = 0; index < itemCount.Bunbetsu.length; index++) {
+                    var element = itemCount.Bunbetsu[index];
+                    if (element.name === bunbetsuData.item) {
+                        // 名前がすでに登録済の場合、カウントアップ
+                        itemCount.Bunbetsu[index].count++;
+                        break;
+                    }
+                    else if (index === lastIndex) {
+                        // 名前が未登録の場合、そのまま登録
+                        itemCount.Bunbetsu.push({
+                            name: bunbetsuData.item,
+                            count: 1
+                        });
+                        break;
+                    }
+                }
             }
-            for (var _b = 0, _c = response.Items; _b < _c.length; _b++) {
-                var item = _c[_b];
-                BunbetsuData.Items.push(item);
+            else {
+                // カウント情報がない場合は、そのまま追加
+                itemCount.Bunbetsu.push({
+                    name: bunbetsuData.item,
+                    count: 1
+                });
             }
         }
-    })
-        .then(function () {
-        fs.writeFileSync('GarbageTypes.json', JSON.stringify({ "types": BunbetsuData.Bunbetsu }, undefined, '\t'));
-        fs.writeFileSync('ja-JP_GARBAGE_TYPE.json', JSON.stringify(BunbetsuData.Items, undefined, '\t'));
-    });
-}
+        // カスタムスロット
+        for (var _b = 0, _c = originalBunbetsuData.Items; _b < _c.length; _b++) {
+            var itemData = _c[_b];
+            if (itemCount.Items.length > 0) {
+                var lastIndex = itemCount.Items.length - 1;
+                for (var index = 0; index < itemCount.Items.length; index++) {
+                    var element = itemCount.Items[index];
+                    if (element.name === itemData.name.value) {
+                        itemCount.Items[index].count++;
+                        break;
+                    }
+                    else if (index === lastIndex) {
+                        itemCount.Items.push({
+                            name: itemData.name.value,
+                            count: 1
+                        });
+                        break;
+                    }
+                }
+            }
+            else {
+                itemCount.Items.push({
+                    name: itemData.name.value,
+                    count: 1
+                });
+            }
+        }
+        // 重複を削除
+        for (var index = 0; index < itemCount.Bunbetsu.length; index++) {
+            var item = itemCount.Bunbetsu[index];
+            if (item.count >= 2) {
+                var deleteNum = item.count - 1;
+                // console.log(item.name, " : ", item.count);
+                while (deleteNum > 0) {
+                    for (var index_1 = 0; index_1 < originalBunbetsuData.Bunbetsu.length; index_1++) {
+                        var element = originalBunbetsuData.Bunbetsu[index_1];
+                        if (element.item === item.name) {
+                            originalBunbetsuData.Bunbetsu.splice(index_1, 1);
+                            break;
+                        }
+                    }
+                    deleteNum--;
+                }
+            }
+        }
+        for (var index = 0; index < itemCount.Items.length; index++) {
+            var item = itemCount.Items[index];
+            if (item.count >= 2) {
+                var deleteNum = item.count - 1;
+                while (deleteNum > 0) {
+                    for (var index_2 = 0; index_2 < originalBunbetsuData.Items.length; index_2++) {
+                        var element = originalBunbetsuData.Items[index_2];
+                        if (element.name.value === item.name) {
+                            originalBunbetsuData.Items.splice(index_2, 1);
+                            break;
+                        }
+                    }
+                    deleteNum--;
+                }
+            }
+        }
+        return originalBunbetsuData;
+    };
+    GarbageData.prototype.isContainsOnlyCanSpeakWord = function (items) {
+        for (var _i = 0, items_1 = items; _i < items_1.length; _i++) {
+            var item = items_1[_i];
+            var isNotSpeakableWord = item.name.value.match(/[!"#$%&'()\*\+\-\.,\/:;<=>?@\[\\\]^_`{|}~（）・]/g);
+            if (isNotSpeakableWord) {
+                console.error('記号エラー：', item.name.value);
+                return false;
+            }
+        }
+        return true;
+    };
+    return GarbageData;
+}());
+exports.GarbageData = GarbageData;
+var BunbetsuData = /** @class */ (function () {
+    function BunbetsuData(bunbetsu, items) {
+        this.Bunbetsu = bunbetsu;
+        this.Items = items;
+    }
+    /**
+     * インスタンス変数分別情報を追加する
+     * @param bunbetsu 分別情報
+     */
+    BunbetsuData.prototype.addBunbetsu = function (bunbetsu) {
+        for (var _i = 0, bunbetsu_1 = bunbetsu; _i < bunbetsu_1.length; _i++) {
+            var item = bunbetsu_1[_i];
+            this.Bunbetsu.push(item);
+        }
+    };
+    BunbetsuData.prototype.addItems = function (items) {
+        for (var _i = 0, items_2 = items; _i < items_2.length; _i++) {
+            var item = items_2[_i];
+            this.Items.push(item);
+        }
+    };
+    return BunbetsuData;
+}());
+exports.BunbetsuData = BunbetsuData;
+;
+var garbageData = new GarbageData();
+garbageData.getGarbageData();

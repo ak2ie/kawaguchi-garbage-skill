@@ -10,7 +10,7 @@ const LaunchRequestHandler = {
     return handlerInput.requestEnvelope.request.type === 'LaunchRequest';
   },
   handle(handlerInput: HandlerInput) {
-    const speechText = '川口のゴミ分別へようこそ。埼玉県川口市のゴミ分別方法をご案内します。食器や段ボールなどゴミの名前を話しかけてください。';
+    const speechText = '川口のゴミ分別へようこそ。埼玉県川口市のゴミ分別方法をご案内します。靴下や段ボールなどゴミの名前を話しかけてください。';
 
     return handlerInput.responseBuilder
       .speak(speechText)
@@ -23,7 +23,8 @@ const LaunchRequestHandler = {
 const GarbageTypeIntentHandler = {
   canHandle(handlerInput: HandlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-      && handlerInput.requestEnvelope.request.intent.name === 'GarbageTypeIntent';
+      && ( handlerInput.requestEnvelope.request.intent.name === 'GarbageTypeIntent'
+      || handlerInput.requestEnvelope.request.intent.name === 'GarbageTypeOneWordIntent');
   },
   handle(handlerInput: HandlerInput) {
     const request = handlerInput.requestEnvelope.request as IntentRequest;

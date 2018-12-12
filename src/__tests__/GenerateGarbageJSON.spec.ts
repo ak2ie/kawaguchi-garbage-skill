@@ -217,4 +217,76 @@ describe('JSON生成', () => {
 
         expect(garbageData.isContainsOnlyCanSpeakWord(input)).toBe(false);
     });
+
+    it('取得不可の分別情報を削除', () => {
+        let garbageData = new GarbageData();
+
+        let input = new BunbetsuData([
+            {
+                "item": "油紙",
+                "types": [
+                    {
+                        "material": "default",
+                        "type": "一般ゴミ"
+                    }
+                ],
+                "isSodaigomiOver40cm": false,
+                "isCannotTakeOut": false,
+                "additionalText": ""
+            },
+            {
+                "item": "油の容器",
+                "types": [
+                    {
+                        "material": "",
+                        "type": "一般ゴミ"
+                    },
+                    {
+                        "material": "",
+                        "type": "プラゴミ"
+                    }
+                ],
+                "isSodaigomiOver40cm": false,
+                "isCannotTakeOut": false,
+                "additionalText": "汚れが落ちない場合は一般ごみです。"
+            }
+        ], [
+            {
+                "name": {
+                    "value": "油紙"
+                }
+            },
+            {
+                "name": {
+                    "value": "油の容器"
+                }
+            }
+        ]);
+
+        let expected = new BunbetsuData([
+            {
+                "item": "油紙",
+                "types": [
+                    {
+                        "material": "default",
+                        "type": "一般ゴミ"
+                    }
+                ],
+                "isSodaigomiOver40cm": false,
+                "isCannotTakeOut": false,
+                "additionalText": ""
+            }
+        ], [
+            {
+                "name": {
+                    "value": "油紙"
+                }
+            }
+        ]);
+
+        let res = garbageData.removeInvalidData(input);
+
+        expect(res.Bunbetsu).toEqual(expected.Bunbetsu);
+        expect(res.Items).toEqual(expected.Items);
+    });
 });

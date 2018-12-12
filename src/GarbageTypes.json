@@ -70,7 +70,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "処分手数料につきましては、「"
+			"additionalText": "処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "足拭きマット",
@@ -121,22 +121,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "油の容器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
-		},
-		{
 			"item": "編み機",
 			"types": [
 				{
@@ -145,22 +129,6 @@
 				}
 			],
 			"isSodaigomiOver40cm": true,
-			"isCannotTakeOut": false,
-			"additionalText": ""
-		},
-		{
-			"item": "網戸",
-			"types": [
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
 		},
@@ -199,38 +167,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "アルミサッシ",
-			"types": [
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "ガラス等は取り外してください。"
-		},
-		{
-			"item": "アルミホイル",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
 		},
 		{
 			"item": "泡立て機",
@@ -372,22 +308,6 @@
 			"additionalText": "なるべく販売店に返却してください。"
 		},
 		{
-			"item": "一斗缶",
-			"types": [
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "必ず中身を取り除き、ふたを取ってから出してください。"
-		},
-		{
 			"item": "井戸用ポンプ",
 			"types": [
 				{
@@ -428,7 +348,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "家電リサイクル法対象品目です。「"
+			"additionalText": "家電リサイクル法対象品目です。「家電のリサイクルについて」をご参照ください。"
 		},
 		{
 			"item": "入れ歯",
@@ -519,7 +439,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "処分手数料につきましては、「"
+			"additionalText": "処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "植木支柱",
@@ -646,7 +566,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "家電リサイクル法対象品目です。「"
+			"additionalText": "家電リサイクル法対象品目です。「家電のリサイクルについて」をご参照ください。"
 		},
 		{
 			"item": "エアゾール缶",
@@ -761,7 +681,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "できるだけ販売店へ返却してください。"
+			"additionalText": "できるだけ販売店へ返却してください。一般ごみに出す場合は布等に染み込ませて漏れないようにしてから出してください。"
 		},
 		{
 			"item": "鉛筆",
@@ -774,22 +694,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "鉛筆削り",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "小型のものは一般ごみです。"
 		},
 		{
 			"item": "オイルヒーター",
@@ -820,7 +724,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "販売店に返却してください。「"
+			"additionalText": "販売店に返却してください。「二輪車リサイクルシステムについて」をご参照ください。"
 		},
 		{
 			"item": "オーブントースター",
@@ -976,7 +880,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "処分手数料につきましては、「"
+			"additionalText": "処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "オルガン",
@@ -1025,22 +929,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "温度計",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "有害ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "水銀式は有害ごみです。"
 		},
 		{
 			"item": "温風ヒーター",
@@ -1100,7 +988,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "アコーディオンカーテンは粗大ごみとなります。処分方法、処分手数料につきましては、「"
+			"additionalText": "アコーディオンカーテンは粗大ごみとなります。処分方法、処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "カーテンレール",
@@ -1295,22 +1183,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "傘",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "金属製の骨組み部分は金属類です。"
-		},
-		{
 			"item": "傘立て",
 			"types": [
 				{
@@ -1333,22 +1205,6 @@
 			"isSodaigomiOver40cm": true,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "菓子の袋容器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
 		},
 		{
 			"item": "ガスコンロ",
@@ -1394,22 +1250,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "ガスレンジガード",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
-		},
-		{
 			"item": "カセットテープ",
 			"types": [
 				{
@@ -1451,54 +1291,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
 			"additionalText": "販売店に返却してください。"
-		},
-		{
-			"item": "カッター",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "刃の部分は金属類です。"
-		},
-		{
-			"item": "合羽",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "繊維ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "繊維製は繊維類です。"
-		},
-		{
-			"item": "カップ麺の容器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "必ず洗ってから出してください。汚れが落ちない場合は一般ごみです。"
 		},
 		{
 			"item": "かつら",
@@ -1607,22 +1399,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": "汚物は取り除いてから出してください。"
-		},
-		{
-			"item": "かみそり",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "刃の部分は金属類です。"
 		},
 		{
 			"item": "紙粘土",
@@ -1859,7 +1635,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "家電リサイクル法対象品目です。「"
+			"additionalText": "家電リサイクル法対象品目です。「家電のリサイクルについて」をご参照ください。"
 		},
 		{
 			"item": "乾燥剤",
@@ -1886,22 +1662,6 @@
 			"additionalText": "市役所、支所、公民館等に設置の専用ボックスへ出してください。"
 		},
 		{
-			"item": "かんな",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "刃の部分は金属類です。"
-		},
-		{
 			"item": "感熱紙",
 			"types": [
 				{
@@ -1912,22 +1672,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "木",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": true,
-			"additionalText": "くわしくは、「"
 		},
 		{
 			"item": "キーボード",
@@ -2036,22 +1780,6 @@
 			"isSodaigomiOver40cm": true,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "キャップ栓",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "プラマークがない場合は一般ごみで出してください。"
 		},
 		{
 			"item": "キャビネット",
@@ -2244,22 +1972,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "薬の容器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
 		},
 		{
 			"item": "口紅",
@@ -2509,22 +2221,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "化粧品の容器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
-		},
-		{
 			"item": "下駄",
 			"types": [
 				{
@@ -2620,7 +2316,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "販売店に返却してください。「"
+			"additionalText": "販売店に返却してください。「二輪車リサイクルシステムについて」をご参照ください。"
 		},
 		{
 			"item": "剣道防具",
@@ -2707,22 +2403,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "コーヒーメーカー",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "ガラス、プラスチック部分は一般ごみです。"
-		},
-		{
 			"item": "氷枕",
 			"types": [
 				{
@@ -2745,22 +2425,6 @@
 			"isSodaigomiOver40cm": true,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "ござ",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "解けないように縛って40センチメートル以下は一般ごみ、40センチメートルを超えるものは粗大ごみで出してください。"
 		},
 		{
 			"item": "こたつ",
@@ -2823,22 +2487,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "碁盤",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "折りたたみ式は一般ごみです。"
-		},
-		{
 			"item": "コピー機",
 			"types": [
 				{
@@ -2861,22 +2509,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "ゴムホース",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以下に切断してください。"
 		},
 		{
 			"item": "米びつ",
@@ -2951,22 +2583,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "ゴルフマット",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": ""
-		},
-		{
 			"item": "コンクリート",
 			"types": [],
 			"isSodaigomiOver40cm": false,
@@ -2995,7 +2611,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "処分手数料につきましては、「"
+			"additionalText": "処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "座椅子",
@@ -3456,38 +3072,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "シャンプーの容器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
-		},
-		{
-			"item": "ジューサー",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "ガラス、プラスチック部分は一般ごみです。"
-		},
-		{
 			"item": "シューズケース",
 			"types": [
 				{
@@ -3498,22 +3082,6 @@
 			"isSodaigomiOver40cm": true,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "じゅうたん",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以下に切断してください。"
 		},
 		{
 			"item": "柔道着",
@@ -3556,7 +3124,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "「"
+			"additionalText": "「消火器のリサイクルについて」をご参照ください。"
 		},
 		{
 			"item": "浄化槽",
@@ -3588,22 +3156,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "将棋板",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "折りたたみ式は一般ごみです。"
 		},
 		{
 			"item": "焼却炉",
@@ -3891,7 +3443,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "処分手数料につきましては、「"
+			"additionalText": "処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "スキーウエア",
@@ -3904,22 +3456,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "スキー靴",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以上は粗大ごみです。"
 		},
 		{
 			"item": "スキーストック",
@@ -3950,23 +3486,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "販売店に返却してください。「"
-		},
-		{
-			"item": "スケート靴",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "金属部分は金属類です。"
+			"additionalText": "販売店に返却してください。「二輪車リサイクルシステムについて」をご参照ください。"
 		},
 		{
 			"item": "スケートボード",
@@ -4003,22 +3523,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "すだれ",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "解けないように縛って40センチメートル以下は一般ごみ、40センチメートルを超えるものは粗大ごみで出してください。"
 		},
 		{
 			"item": "スタンド",
@@ -4121,7 +3625,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "処分手数料につきましては、「"
+			"additionalText": "処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "すのこ",
@@ -4181,7 +3685,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "処分手数料につきましては、「"
+			"additionalText": "処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "スプレー缶",
@@ -4394,7 +3898,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "家電リサイクル法対象品目です。「"
+			"additionalText": "家電リサイクル法対象品目です。「家電のリサイクルについて」をご参照ください。"
 		},
 		{
 			"item": "洗濯バサミ",
@@ -4467,26 +3971,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "掃除機",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "本体及びホースが取り外しができ、それぞれが40センチメートル以下になる場合には、本体は「金属類」、ホースは「一般ごみ」で出してください。"
 		},
 		{
 			"item": "草履",
@@ -4704,7 +4188,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "自己搬入は1日6枚までです。それ以上自己搬入する場合は4分割にしてください。"
+			"additionalText": "自己搬入は1日6枚までです。それ以上自己搬入する場合は4分割にしてください。粗大ごみ収集は1回につき6枚までです。"
 		},
 		{
 			"item": "卓球台",
@@ -4947,22 +4431,6 @@
 			"isSodaigomiOver40cm": true,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "チューブ容器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
 		},
 		{
 			"item": "調理台",
@@ -5211,7 +4679,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "家電リサイクル法対象品目です。「"
+			"additionalText": "家電リサイクル法対象品目です。「家電のリサイクルについて」をご参照ください。"
 		},
 		{
 			"item": "テレビ台",
@@ -5262,22 +4730,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "電気コード",
-			"types": [
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "解けないように縛って40センチメートル以下は金属類、40センチメートルを超えるものは粗大ごみで出してください。"
-		},
-		{
 			"item": "電気スタンド",
 			"types": [
 				{
@@ -5288,22 +4740,6 @@
 			"isSodaigomiOver40cm": true,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "電気ポット",
-			"types": [
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "電気ではないポットは一般ごみです。 "
 		},
 		{
 			"item": "電気毛布",
@@ -5387,23 +4823,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "処分手数料につきましては、「"
-		},
-		{
-			"item": "テント",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "布等の部分は一般ごみ、柱は粗大ごみで出してください。"
+			"additionalText": "処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "電動ドリル",
@@ -5629,22 +5049,6 @@
 			"additionalText": "布などにしみこませ、完全に乾燥させてから出してください。"
 		},
 		{
-			"item": "塗料缶",
-			"types": [
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "必ず中を使い切ってから出してください。"
-		},
-		{
 			"item": "トレイ",
 			"types": [
 				{
@@ -5715,22 +5119,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "納豆の容器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
 		},
 		{
 			"item": "鍋",
@@ -5972,7 +5360,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "販売店に返却してください。「"
+			"additionalText": "販売店に返却してください。「二輪車リサイクルシステムについて」をご参照ください。"
 		},
 		{
 			"item": "パイプ椅子",
@@ -5997,22 +5385,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "バインダー",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "金具は金属類です。"
 		},
 		{
 			"item": "はがき",
@@ -6115,7 +5487,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "「"
+			"additionalText": "「パソコンのリサイクル」をご参照ください。"
 		},
 		{
 			"item": "8ミリ映写機",
@@ -6147,22 +5519,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "発泡スチロール",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "プラマークの無いものは一般ごみです。"
 		},
 		{
 			"item": "バドミントンラケット",
@@ -6211,22 +5567,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "歯磨き粉チューブ",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
 		},
 		{
 			"item": "針",
@@ -6445,22 +5785,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "ビニールシート",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以下に切断してください。"
-		},
-		{
 			"item": "ビニール袋",
 			"types": [
 				{
@@ -6483,22 +5807,6 @@
 			"isSodaigomiOver40cm": true,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "漂白剤の容器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "プラゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚れが落ちない場合は一般ごみです。"
 		},
 		{
 			"item": "肥料",
@@ -6772,22 +6080,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "ブルーシート",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以下に切断してください。"
-		},
-		{
 			"item": "風呂釜",
 			"types": [
 				{
@@ -6888,7 +6180,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "処分手数料につきましては、「"
+			"additionalText": "処分手数料につきましては、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "ペットのトイレ用の砂",
@@ -6943,22 +6235,6 @@
 			"types": [
 				{
 					"material": "default",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": ""
-		},
-		{
-			"item": "ベビー椅子",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
 					"type": "粗大ゴミ"
 				}
 			],
@@ -7037,22 +6313,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "ベルト",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "金属製のバックル部分は金属類です。"
 		},
 		{
 			"item": "ヘルメット",
@@ -7199,22 +6459,6 @@
 			"additionalText": "布、新聞などに包んで出してください。"
 		},
 		{
-			"item": "ホース",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以下に切断してください。"
-		},
-		{
 			"item": "ホースリール",
 			"types": [
 				{
@@ -7225,22 +6469,6 @@
 			"isSodaigomiOver40cm": true,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "ポータブルトイレ",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "汚物は取り除いてから出してください。"
 		},
 		{
 			"item": "ボーリングのボール",
@@ -7334,22 +6562,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "ホットカーペットカバー",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以下に切断してください。"
-		},
-		{
 			"item": "ホットプレート",
 			"types": [
 				{
@@ -7384,22 +6596,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "ポリタンク",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "20リットル以上は粗大ごみです。"
 		},
 		{
 			"item": "ポリバケツ",
@@ -7567,7 +6763,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "スプリングマットレスは処分手数料が異なりますので、「"
+			"additionalText": "スプリングマットレスは処分手数料が異なりますので、「家庭ごみの正しい分け方・出し方」のページの粗大ごみの項目をご参照ください。"
 		},
 		{
 			"item": "松葉杖",
@@ -7654,22 +6850,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "ミキサー",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "ガラス、プラスチック部分は一般ごみです。取り外せない場合は金属類で出してください。"
-		},
-		{
 			"item": "ミシン",
 			"types": [
 				{
@@ -7730,22 +6910,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "蒸し器",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以上は粗大ごみです。"
-		},
-		{
 			"item": "虫眼鏡",
 			"types": [
 				{
@@ -7756,22 +6920,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "むしろ",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "解けないように縛って40センチメートル以下は一般ごみ、40センチメートルを超えるものは粗大ごみで出してください。"
 		},
 		{
 			"item": "名刺",
@@ -8050,22 +7198,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "よしず",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "解けないように縛って40センチメートル以下は一般ごみ、40センチメートルを超えるものは粗大ごみで出してください。"
-		},
-		{
 			"item": "ライター",
 			"types": [
 				{
@@ -8286,7 +7418,7 @@
 			"types": [],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": true,
-			"additionalText": "家電リサイクル法対象品目です。「"
+			"additionalText": "家電リサイクル法対象品目です。「家電のリサイクルについて」をご参照ください。"
 		},
 		{
 			"item": "冷風機",
@@ -8358,7 +7490,7 @@
 			],
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以下に切断してください。"
+			"additionalText": "40センチメートル以下に切断してください。切断できない場合は粗大ごみです。"
 		},
 		{
 			"item": "レンガ",
@@ -8402,22 +7534,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "ロープ",
-			"types": [
-				{
-					"material": "",
-					"type": "一般ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "40センチメートル以下に切断してください。"
 		},
 		{
 			"item": "ローラースケート",
@@ -8478,22 +7594,6 @@
 			"isSodaigomiOver40cm": false,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "ワイヤーロープ",
-			"types": [
-				{
-					"material": "",
-					"type": "金属ゴミ"
-				},
-				{
-					"material": "",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "解けないように縛って40センチメートル以内は金属類、40センチメートルを超えるものは粗大ごみで出してください。"
 		},
 		{
 			"item": "輪ゴム",

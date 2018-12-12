@@ -47,8 +47,14 @@ export class GarbageData {
         // 記号有無チェック
         this.isContainsOnlyCanSpeakWord(duplicateRemovedData.Items);
 
+        // 正しく取得できなかった情報を削除
+        this.removeInvalidData(duplicateRemovedData);
         // JSON出力
         this.outputJson(duplicateRemovedData);
+
+        console.log("\n==============================  出力完了 ===============================");
+        console.log(this.GARBAGE_DATA_JSON_FILENAME, ":", "src/直下にコピーしてください。");
+        console.log(this.ALEXA_SKILL_MODEL_JSON_FILENAME, ":", "languageModel > types > valuesを書き換えてください。\n\n");
     }
 
     async getGarbageDataFromHTML(body: string) {
@@ -80,9 +86,16 @@ export class GarbageData {
 
                 $(elemet).children('td').each((i, tdElement) => {
                     var elementText = "";
-                    const elementData = tdElement.children[0].data;
-                    if (typeof elementData === "string") {
-                        elementText = elementData.trim();
+
+                    for (const element of tdElement.children) {
+                        if (element.tagName !== 'a') {
+                            if (typeof element.data === "string") {
+                                elementText += element.data.trim();
+                            }
+                        } else {
+                            let innerText = element.children[0].data;
+                            elementText += innerText;
+                        }
                     }
 
                     switch (i) {
@@ -336,6 +349,31 @@ export class GarbageData {
             }
         }
         return true;
+    }
+
+    public removeInvalidData(bunbetsuData: BunbetsuData) {
+        let result = bunbetsuData;
+        for (let i = 0; i < result.Bunbetsu.length; i++) {
+            const bunbetsu = result.Bunbetsu[i];
+            for (const type of bunbetsu.types) {
+                if (type.material === "") {
+                    // 分別情報を削除
+                    result.Bunbetsu.splice(i, 1);
+
+                    // モデルからも削除
+                    for (let j = 0; j < result.Items.length; j++) {
+                        const item = result.Items[j];
+                        if (item.name.value === bunbetsu.item) {
+                            result.Items.splice(j, 1);
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+
+        return result;
     }
 }
 

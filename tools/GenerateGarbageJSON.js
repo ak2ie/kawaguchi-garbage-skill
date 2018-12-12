@@ -61,6 +61,10 @@ var GarbageData = /** @class */ (function () {
          */
         this.ALEXA_SKILL_MODEL_JSON_FILENAME = 'ja-JP_GARBAGE_TYPE.json';
     }
+    /**
+     * プログラムのエントリポイント
+     * 分別情報とアレクサスキル用modelをJSONファイルに保存する
+     */
     GarbageData.prototype.getGarbageData = function () {
         return __awaiter(this, void 0, void 0, function () {
             var garbageData, _i, _a, url, html, tempGarbageData, duplicateRemovedData;
@@ -86,13 +90,16 @@ var GarbageData = /** @class */ (function () {
                         _i++;
                         return [3 /*break*/, 1];
                     case 5:
-                        console.log(garbageData.Bunbetsu.length);
-                        console.log(garbageData.Items.length);
                         duplicateRemovedData = this.removeDulplicate(garbageData);
-                        // 記号チェック
+                        // 記号有無チェック
                         this.isContainsOnlyCanSpeakWord(duplicateRemovedData.Items);
+                        // 正しく取得できなかった情報を削除
+                        this.removeInvalidData(duplicateRemovedData);
                         // JSON出力
                         this.outputJson(duplicateRemovedData);
+                        console.log("\n==============================  出力完了 ===============================");
+                        console.log(this.GARBAGE_DATA_JSON_FILENAME, ":", "src/直下にコピーしてください。");
+                        console.log(this.ALEXA_SKILL_MODEL_JSON_FILENAME, ":", "languageModel > types > valuesを書き換えてください。\n\n");
                         return [2 /*return*/];
                 }
             });
@@ -125,9 +132,17 @@ var GarbageData = /** @class */ (function () {
                         var additionalText = "";
                         $_1(elemet).children('td').each(function (i, tdElement) {
                             var elementText = "";
-                            var elementData = tdElement.children[0].data;
-                            if (typeof elementData === "string") {
-                                elementText = elementData.trim();
+                            for (var _i = 0, _a = tdElement.children; _i < _a.length; _i++) {
+                                var element = _a[_i];
+                                if (element.tagName !== 'a') {
+                                    if (typeof element.data === "string") {
+                                        elementText += element.data.trim();
+                                    }
+                                }
+                                else {
+                                    var innerText = element.children[0].data;
+                                    elementText += innerText;
+                                }
                             }
                             switch (i) {
                                 case HINMOKU_TABLE_HEADER.HINMOKU:
@@ -260,6 +275,10 @@ var GarbageData = /** @class */ (function () {
         fs.writeFileSync(this.GARBAGE_DATA_JSON_FILENAME, JSON.stringify({ "types": bunbetsuData.Bunbetsu }, undefined, '\t'));
         fs.writeFileSync(this.ALEXA_SKILL_MODEL_JSON_FILENAME, JSON.stringify(bunbetsuData.Items, undefined, '\t'));
     };
+    /**
+     * ゴミの名前をもとに重複を削除した結果を返す
+     * @param originalBunbetsuData 重複があるデータ
+     */
     GarbageData.prototype.removeDulplicate = function (originalBunbetsuData) {
         // 品目名別の要素数
         var itemCount = {
@@ -370,6 +389,29 @@ var GarbageData = /** @class */ (function () {
             }
         }
         return true;
+    };
+    GarbageData.prototype.removeInvalidData = function (bunbetsuData) {
+        var result = bunbetsuData;
+        for (var i = 0; i < result.Bunbetsu.length; i++) {
+            var bunbetsu = result.Bunbetsu[i];
+            for (var _i = 0, _a = bunbetsu.types; _i < _a.length; _i++) {
+                var type = _a[_i];
+                if (type.material === "") {
+                    // 分別情報を削除
+                    result.Bunbetsu.splice(i, 1);
+                    // モデルからも削除
+                    for (var j = 0; j < result.Items.length; j++) {
+                        var item = result.Items[j];
+                        if (item.name.value === bunbetsu.item) {
+                            result.Items.splice(j, 1);
+                            break;
+                        }
+                    }
+                    break;
+                }
+            }
+        }
+        return result;
     };
     return GarbageData;
 }());

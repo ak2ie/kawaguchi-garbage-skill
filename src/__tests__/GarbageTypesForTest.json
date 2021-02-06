@@ -47,6 +47,18 @@
             "isSodaigomiOver40cm": false,
             "isCannotTakeOut": false,
             "additionalText": "布等に染み込ませて漏れないようにしてから出してください。"
-        }
+        },
+        {
+			"item": "サンダル",
+			"types": [
+				{
+					"material": "default",
+					"type": "一般ゴミ"
+				}
+			],
+			"isSodaigomiOver40cm": false,
+			"isCannotTakeOut": false,
+			"additionalText": ""
+		}
     ]
 }

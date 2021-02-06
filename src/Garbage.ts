@@ -87,4 +87,12 @@ export class Garbage {
 
         return speechText;
     }
+
+    /**
+     * GetNextCollectDate
+     * 次回収集日を取得する
+     */
+    public GetNextCollectDate(garbageType: string): Date {
+        return new Date();
+    }
 }

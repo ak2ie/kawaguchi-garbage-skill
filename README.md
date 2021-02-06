@@ -2,7 +2,7 @@
 川口市のゴミ分別方法を教えてくれるAlexa Skillです。
 
 # 開発環境
- - Node
+ - Node 8.10
  - TypeScript
 
 # デプロイ方法

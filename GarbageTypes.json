@@ -3206,18 +3206,6 @@
 			"additionalText": ""
 		},
 		{
-			"item": "焼却炉",
-			"types": [
-				{
-					"material": "default",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": ""
-		},
-		{
 			"item": "障子",
 			"types": [
 				{
@@ -5738,15 +5726,10 @@
 		},
 		{
 			"item": "ビールケース",
-			"types": [
-				{
-					"material": "default",
-					"type": "粗大ゴミ"
-				}
-			],
+			"types": [],
 			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "なるべく販売店に返却してください。"
+			"isCannotTakeOut": true,
+			"additionalText": "販売店に返却してください。"
 		},
 		{
 			"item": "ビールびん",
@@ -6109,18 +6092,6 @@
 				{
 					"material": "default",
 					"type": "一般ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": true,
-			"isCannotTakeOut": false,
-			"additionalText": ""
-		},
-		{
-			"item": "プリンター",
-			"types": [
-				{
-					"material": "default",
-					"type": "金属ゴミ"
 				}
 			],
 			"isSodaigomiOver40cm": true,
@@ -7491,18 +7462,6 @@
 			"isSodaigomiOver40cm": true,
 			"isCannotTakeOut": false,
 			"additionalText": ""
-		},
-		{
-			"item": "レーザープリンター",
-			"types": [
-				{
-					"material": "default",
-					"type": "粗大ゴミ"
-				}
-			],
-			"isSodaigomiOver40cm": false,
-			"isCannotTakeOut": false,
-			"additionalText": "トナーは必ず取り除き、販売店に返却してください。"
 		},
 		{
 			"item": "レコード盤",

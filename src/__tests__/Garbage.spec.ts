@@ -27,3 +27,10 @@ describe('ゴミ', () => {
         expect(garbage.GenerateSpeechText('油')).toContain(speechText);
     });
 });
+
+describe('次回収集日', () => {
+    it('地域設定あり', async () => {
+        const garbage = new Garbage(JSON_PATH);
+        expect(garbage.GetNextCollectDate('サンダル')).toEqual(new Date());
+    });
+});

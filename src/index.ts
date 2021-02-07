@@ -3,6 +3,7 @@
 
 import { HandlerInput, RequestHandler, ErrorHandler, SkillBuilders } from "ask-sdk-core";
 import { SessionEndedRequest, IntentRequest } from "ask-sdk-model";
+import { CollectionSchedule } from "./CollectionSchedule";
 import { Garbage } from "./Garbage";
 
 const LaunchRequestHandler = {
@@ -23,8 +24,8 @@ const LaunchRequestHandler = {
 const GarbageTypeIntentHandler = {
   canHandle(handlerInput: HandlerInput) {
     return handlerInput.requestEnvelope.request.type === 'IntentRequest'
-      && ( handlerInput.requestEnvelope.request.intent.name === 'GarbageTypeIntent'
-      || handlerInput.requestEnvelope.request.intent.name === 'GarbageTypeOneWordIntent');
+      && (handlerInput.requestEnvelope.request.intent.name === 'GarbageTypeIntent'
+        || handlerInput.requestEnvelope.request.intent.name === 'GarbageTypeOneWordIntent');
   },
   handle(handlerInput: HandlerInput) {
     const request = handlerInput.requestEnvelope.request as IntentRequest;
@@ -104,6 +105,48 @@ const SessionEndedRequestHandler = {
   },
 };
 
+/**
+ * 収集日
+ */
+const CollectionDateIntentHandler = {
+  canHandle(handlerInput: HandlerInput) {
+    return handlerInput.requestEnvelope.request.type === 'IntentRequest'
+      && handlerInput.requestEnvelope.request.intent.name === 'GarbageCategoryIntent'
+  },
+  handle(handlerInput: HandlerInput) {
+    const request = handlerInput.requestEnvelope.request as IntentRequest;
+
+    if (typeof request !== 'undefined' && typeof request.intent.slots !== 'undefined') {
+      const garbage = request.intent.slots.garbageType.value;
+      const schedule = new CollectionSchedule();
+      const speechText = garbageInstance.GenerateSpeechText(garbage);
+
+      if (speechText !== '') {
+        return handlerInput.responseBuilder
+          .speak(speechText + '他に調べたいものはありますか。')
+          .reprompt('収集日を調べたいゴミの種類を教えてください。')
+          .withSimpleCard('ゴミ収集日検索', speechText)
+          .getResponse();
+      } else {
+        return handlerInput.responseBuilder
+          .speak(speechText)
+          .reprompt('収集日を調べたいゴミの種類を教えてください。')
+          .withSimpleCard('ゴミ収集日検索', speechText)
+          .getResponse();
+      }
+    } else {
+      const speechText = 'すみません。ゴミの種類が分かりませんでした。別の言葉に言い換えてみてください。';
+
+      return handlerInput.responseBuilder
+        .speak(speechText)
+        .reprompt('収集日を調べたいゴミの種類を教えてください。')
+        .withSimpleCard('ゴミ収集日検索', speechText)
+        .getResponse();
+    }
+
+  },
+};
+
 const ErrorHandler = {
   canHandle() {
     return true;
@@ -125,7 +168,8 @@ export const handler = skillBuilder.addRequestHandlers(
   HelpIntentHandler,
   CancelAndStopIntentHandler,
   SessionEndedRequestHandler,
-  GarbageTypeIntentHandler
+  GarbageTypeIntentHandler,
+  CollectionDateIntentHandler
 )
   .addErrorHandlers(ErrorHandler)
   .lambda();

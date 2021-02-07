@@ -1,0 +1,178 @@
+{
+  "patterns": [
+    {
+      "patternNumber": 1,
+      "schedules": [
+        {
+          "category": "Regular",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 1 },
+            { "dayOfWeek": "Monday", "ordinalNum": 2 },
+            { "dayOfWeek": "Monday", "ordinalNum": 3 },
+            { "dayOfWeek": "Monday", "ordinalNum": 4 },
+            { "dayOfWeek": "Monday", "ordinalNum": 5 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 1 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 2 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 3 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 4 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 5 }
+          ]
+        },
+        {
+          "category": "Toxic",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 1 },
+            { "dayOfWeek": "Monday", "ordinalNum": 2 },
+            { "dayOfWeek": "Monday", "ordinalNum": 3 },
+            { "dayOfWeek": "Monday", "ordinalNum": 4 },
+            { "dayOfWeek": "Monday", "ordinalNum": 5 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 1 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 2 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 3 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 4 },
+            { "dayOfWeek": "Thursday", "ordinalNum": 5 }
+          ]
+        },
+        {
+          "category": "Plastic",
+          "days": [
+            { "dayOfWeek": "Wednesday", "ordinalNum": 1 },
+            { "dayOfWeek": "Wednesday", "ordinalNum": 2 },
+            { "dayOfWeek": "Wednesday", "ordinalNum": 3 },
+            { "dayOfWeek": "Wednesday", "ordinalNum": 4 },
+            { "dayOfWeek": "Wednesday", "ordinalNum": 5 }
+          ]
+        },
+        {
+          "category": "Bottles",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 1 },
+            { "dayOfWeek": "Monday", "ordinalNum": 3 }
+          ]
+        },
+        {
+          "category": "Can",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 1 },
+            { "dayOfWeek": "Monday", "ordinalNum": 3 }
+          ]
+        },
+        {
+          "category": "Metal",
+          "days": [
+            { "dayOfWeek": "Tuesday", "ordinalNum": 2 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 4 }
+          ]
+        },
+        {
+          "category": "Paper",
+          "days": [
+            { "dayOfWeek": "Tuesday", "ordinalNum": 2 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 4 }
+          ]
+        },
+        {
+          "category": "PetBottles",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 2 },
+            { "dayOfWeek": "Monday", "ordinalNum": 4 }
+          ]
+        },
+        {
+          "category": "Textiles",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 2 },
+            { "dayOfWeek": "Monday", "ordinalNum": 4 }
+          ]
+        }
+      ]
+    },
+    {
+      "patternNumber": 2,
+      "schedules": [
+        {
+          "category": "Regular",
+          "days": [
+            { "dayOfWeek": "Tuesday", "ordinalNum": 1 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 2 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 3 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 4 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 5 },
+            { "dayOfWeek": "Friday", "ordinalNum": 1 },
+            { "dayOfWeek": "Friday", "ordinalNum": 2 },
+            { "dayOfWeek": "Friday", "ordinalNum": 3 },
+            { "dayOfWeek": "Friday", "ordinalNum": 4 },
+            { "dayOfWeek": "Friday", "ordinalNum": 5 }
+          ]
+        },
+        {
+          "category": "Toxic",
+          "days": [
+            { "dayOfWeek": "Tuesday", "ordinalNum": 1 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 2 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 3 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 4 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 5 },
+            { "dayOfWeek": "Friday", "ordinalNum": 1 },
+            { "dayOfWeek": "Friday", "ordinalNum": 2 },
+            { "dayOfWeek": "Friday", "ordinalNum": 3 },
+            { "dayOfWeek": "Friday", "ordinalNum": 4 },
+            { "dayOfWeek": "Friday", "ordinalNum": 5 }
+          ]
+        },
+        {
+          "category": "Plastic",
+          "days": [
+            { "dayOfWeek": "Wednesday", "ordinalNum": 1 },
+            { "dayOfWeek": "Wednesday", "ordinalNum": 2 },
+            { "dayOfWeek": "Wednesday", "ordinalNum": 3 },
+            { "dayOfWeek": "Wednesday", "ordinalNum": 4 },
+            { "dayOfWeek": "Wednesday", "ordinalNum": 5 }
+          ]
+        },
+        {
+          "category": "Bottles",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 1 },
+            { "dayOfWeek": "Monday", "ordinalNum": 3 }
+          ]
+        },
+        {
+          "category": "Can",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 1 },
+            { "dayOfWeek": "Monday", "ordinalNum": 3 }
+          ]
+        },
+        {
+          "category": "Metal",
+          "days": [
+            { "dayOfWeek": "Tuesday", "ordinalNum": 2 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 4 }
+          ]
+        },
+        {
+          "category": "Paper",
+          "days": [
+            { "dayOfWeek": "Tuesday", "ordinalNum": 2 },
+            { "dayOfWeek": "Tuesday", "ordinalNum": 4 }
+          ]
+        },
+        {
+          "category": "PetBottles",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 2 },
+            { "dayOfWeek": "Monday", "ordinalNum": 4 }
+          ]
+        },
+        {
+          "category": "Textiles",
+          "days": [
+            { "dayOfWeek": "Monday", "ordinalNum": 2 },
+            { "dayOfWeek": "Monday", "ordinalNum": 4 }
+          ]
+        }
+      ]
+    }
+  ]
+}

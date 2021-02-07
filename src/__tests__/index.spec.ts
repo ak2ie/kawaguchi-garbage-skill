@@ -19,15 +19,15 @@ describe("helloworld skill", () => {
     expect(payload.response.shouldEndSession).toBeFalsy();
   });
 
-  it("HelloWorldIntent", async () => {
-    const speechText = "Hello World!";
-    let payload = (await alexa.utter("hello")) as SkillResponse;
-    expect(payload.response.outputSpeech.ssml).toContain(speechText);
-    payload = (await alexa.utter("say hello")) as SkillResponse;
-    expect(payload.response.outputSpeech.ssml).toContain(speechText);
-    payload = (await alexa.utter("say hello world")) as SkillResponse;
-    expect(payload.response.outputSpeech.ssml).toContain(speechText);
-  });
+  // it("HelloWorldIntent", async () => {
+  //   const speechText = "Hello World!";
+  //   let payload = (await alexa.utter("hello")) as SkillResponse;
+  //   expect(payload.response.outputSpeech.ssml).toContain(speechText);
+  //   payload = (await alexa.utter("say hello")) as SkillResponse;
+  //   expect(payload.response.outputSpeech.ssml).toContain(speechText);
+  //   payload = (await alexa.utter("say hello world")) as SkillResponse;
+  //   expect(payload.response.outputSpeech.ssml).toContain(speechText);
+  // });
 
   it("LaunchRequest2", async () => {
     const speechText =
